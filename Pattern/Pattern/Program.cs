@@ -12,7 +12,7 @@
     {
         public void Release() => Console.WriteLine("Released coupe");
     }
-    interface ICarFactory
+    public interface ICarFactory
     {
         IReleaseNewModel Create();
     }
