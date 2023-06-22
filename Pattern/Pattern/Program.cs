@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+namespace Pattern
+{ 
+    public interface IReleaseNewModel
+    {
+        void Release();
+    }
+    public class Sedan : IReleaseNewModel
+    {
+        public void Release() => Console.WriteLine("Released sedan");
+    }
+    public class Coupe : IReleaseNewModel
+    {
+        public void Release() => Console.WriteLine("Released coupe");
+    }
+
+
+
+}
