@@ -1,6 +1,5 @@
-﻿using System;
-namespace Pattern
-{ 
+﻿namespace Pattern
+{
     public interface IReleaseNewModel
     {
         void Release();
@@ -27,8 +26,16 @@ namespace Pattern
     {
         public IReleaseNewModel Create() => new Coupe();
     }
-
-
-
-
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ICarFactory sedanFactory = new SedanFactory();
+            IReleaseNewModel sedan = sedanFactory.Create();
+            ICarFactory coupeFactory = new CoupeFactory();
+            IReleaseNewModel coupe = coupeFactory.Create();
+            sedan.Release();
+            coupe.Release();
+        }
+    }
 }
