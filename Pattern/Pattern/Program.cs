@@ -13,6 +13,21 @@ namespace Pattern
     {
         public void Release() => Console.WriteLine("Released coupe");
     }
+    interface ICarFactory
+    {
+        IReleaseNewModel Create();
+    }
+
+    public class SedanFactory : ICarFactory
+    {
+        public IReleaseNewModel Create() => new Sedan();
+    }
+
+    public class CoupeFactory : ICarFactory
+    {
+        public IReleaseNewModel Create() => new Coupe();
+    }
+
 
 
 
