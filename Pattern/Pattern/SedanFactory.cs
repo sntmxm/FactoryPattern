@@ -8,6 +8,6 @@ namespace Pattern
 {
     public class SedanFactory : ICarFactory
     {
-        public IReleaseNewModel Create() => new Sedan();
+        public Car Create() => new Sedan();
     }
 }
