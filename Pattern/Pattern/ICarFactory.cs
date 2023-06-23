@@ -8,6 +8,6 @@ namespace Pattern
 {
     public interface ICarFactory
     {
-        IReleaseNewModel Create();
+        Car Create();
     }
 }
