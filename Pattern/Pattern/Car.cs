@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pattern
 {
-    public interface IReleaseNewModel
+    internal class Car
     {
-        void Release();
     }
 }
