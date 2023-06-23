@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Pattern
 {
-    public class Coupe : IReleaseNewModel
+    public class Coupe : Car
     {
-        public void Release() => Console.WriteLine("Released coupe");
+       
     }
 }
