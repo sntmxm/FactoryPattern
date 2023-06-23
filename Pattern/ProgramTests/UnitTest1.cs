@@ -6,22 +6,22 @@ namespace ProgramTests
     public class CarFactoryTests
     {
         [Test]
-        public void SedanFactoryCreateSedanType()
+        public void SedanFactoryCreateCar()
         {
             ICarFactory sedanFactory = new SedanFactory();
-            IReleaseNewModel sedan = sedanFactory.Create();
-            Assert.IsInstanceOf<Sedan>(sedan);
+            Car car = sedanFactory.Create();
+            Assert.IsInstanceOf<Sedan>(car);
         }
 
         [Test]
-        public void CoupeFactoryCreateCoupeType()
+        public void CoupeFactoryCreateCar()
         {
             ICarFactory coupeFactory = new CoupeFactory();
-            IReleaseNewModel coupe = coupeFactory.Create();
-            Assert.IsInstanceOf<Coupe>(coupe);
+            Car car = coupeFactory.Create();
+            Assert.IsInstanceOf<Coupe>(car);
         }
-
     }
 
-
 }
+
+

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Pattern
 {
-    internal class Car
+    public abstract class Car
     {
+        
     }
 }
